@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A006418216227530061EAF9 /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A006417216227530061EAF9 /* MeditationViewController.swift */; };
+		2A00641A2162283F0061EAF9 /* AsanasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0064192162283F0061EAF9 /* AsanasTableViewController.swift */; };
+		2A00641C216228710061EAF9 /* AsanasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A00641B216228710061EAF9 /* AsanasTableViewCell.swift */; };
+		2A00641E21622A750061EAF9 /* SequenceAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A00641D21622A750061EAF9 /* SequenceAnimationViewController.swift */; };
+		2A9758BD215E32AC009C7FCF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A9758BC215E32AC009C7FCF /* GoogleService-Info.plist */; };
+		2ACEF036215A753C009E6306 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACEF035215A753C009E6306 /* AppDelegate.swift */; };
+		2ACEF038215A753C009E6306 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACEF037215A753C009E6306 /* ViewController.swift */; };
+		2ACEF03B215A753C009E6306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACEF039215A753C009E6306 /* Main.storyboard */; };
+		2ACEF03D215A753D009E6306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACEF03C215A753D009E6306 /* Assets.xcassets */; };
+		2ACEF040215A753D009E6306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACEF03E215A753D009E6306 /* LaunchScreen.storyboard */; };
+		2ACEF04B215A753E009E6306 /* yojoyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACEF04A215A753E009E6306 /* yojoyTests.swift */; };
+		2ACEF056215A753E009E6306 /* yojoyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACEF055215A753E009E6306 /* yojoyUITests.swift */; };
+		2ACEF064215A77D4009E6306 /* SequencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACEF063215A77D4009E6306 /* SequencesViewController.swift */; };
+		2ACEF066215A788C009E6306 /* SubSequencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACEF065215A788C009E6306 /* SubSequencesViewController.swift */; };
+		2ACEF068215A78E2009E6306 /* SequenceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACEF067215A78E2009E6306 /* SequenceCell.swift */; };
+		2ACEF06A215A790E009E6306 /* SubSequenceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACEF069215A790E009E6306 /* SubSequenceCell.swift */; };
+		2ACEF06C215A8431009E6306 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACEF06B215A8431009E6306 /* Sequence.swift */; };
+		331D49FE1C9BCB0C027C0F80 /* Pods_yojoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD6D9AD2E3497CE666E6512C /* Pods_yojoy.framework */; };
+		C19F5155B3CACD3E2CD2285D /* Pods_yojoyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0F1C2FA6CE604AAA916E0A /* Pods_yojoyTests.framework */; };
+		F345766C41DD10F31E9CEAD0 /* Pods_yojoyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAE935E949FA88522DF37F7 /* Pods_yojoyUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2ACEF047215A753D009E6306 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ACEF02A215A753C009E6306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2ACEF031215A753C009E6306;
+			remoteInfo = yojoy;
+		};
+		2ACEF052215A753E009E6306 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ACEF02A215A753C009E6306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2ACEF031215A753C009E6306;
+			remoteInfo = yojoy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		013A8400873B06F16A212D94 /* Pods-yojoyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yojoyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yojoyUITests/Pods-yojoyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		09423A394F17BC09AC2C26CB /* Pods-yojoyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yojoyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yojoyUITests/Pods-yojoyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		27D9B956C0BCC65EA4570E98 /* Pods-yojoy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yojoy.release.xcconfig"; path = "Pods/Target Support Files/Pods-yojoy/Pods-yojoy.release.xcconfig"; sourceTree = "<group>"; };
+		2A006417216227530061EAF9 /* MeditationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
+		2A0064192162283F0061EAF9 /* AsanasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsanasTableViewController.swift; sourceTree = "<group>"; };
+		2A00641B216228710061EAF9 /* AsanasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsanasTableViewCell.swift; sourceTree = "<group>"; };
+		2A00641D21622A750061EAF9 /* SequenceAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceAnimationViewController.swift; sourceTree = "<group>"; };
+		2A9758BC215E32AC009C7FCF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2ACEF032215A753C009E6306 /* yojoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yojoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ACEF035215A753C009E6306 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2ACEF037215A753C009E6306 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2ACEF03A215A753C009E6306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2ACEF03C215A753D009E6306 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2ACEF03F215A753D009E6306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2ACEF041215A753D009E6306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ACEF046215A753D009E6306 /* yojoyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yojoyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ACEF04A215A753E009E6306 /* yojoyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yojoyTests.swift; sourceTree = "<group>"; };
+		2ACEF04C215A753E009E6306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ACEF051215A753E009E6306 /* yojoyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yojoyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ACEF055215A753E009E6306 /* yojoyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yojoyUITests.swift; sourceTree = "<group>"; };
+		2ACEF057215A753E009E6306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ACEF063215A77D4009E6306 /* SequencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequencesViewController.swift; sourceTree = "<group>"; };
+		2ACEF065215A788C009E6306 /* SubSequencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubSequencesViewController.swift; sourceTree = "<group>"; };
+		2ACEF067215A78E2009E6306 /* SequenceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceCell.swift; sourceTree = "<group>"; };
+		2ACEF069215A790E009E6306 /* SubSequenceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubSequenceCell.swift; sourceTree = "<group>"; };
+		2ACEF06B215A8431009E6306 /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
+		2D5F497657C5867AE0AF7A70 /* Pods-yojoyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yojoyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yojoyTests/Pods-yojoyTests.release.xcconfig"; sourceTree = "<group>"; };
+		5FAE935E949FA88522DF37F7 /* Pods_yojoyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yojoyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABF554AC89ECC4D13EAB1CC9 /* Pods-yojoy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yojoy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yojoy/Pods-yojoy.debug.xcconfig"; sourceTree = "<group>"; };
+		C48C8C36A02B622A92A37972 /* Pods-yojoyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yojoyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yojoyTests/Pods-yojoyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC0F1C2FA6CE604AAA916E0A /* Pods_yojoyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yojoyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD6D9AD2E3497CE666E6512C /* Pods_yojoy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yojoy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2ACEF02F215A753C009E6306 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				331D49FE1C9BCB0C027C0F80 /* Pods_yojoy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ACEF043215A753D009E6306 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19F5155B3CACD3E2CD2285D /* Pods_yojoyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ACEF04E215A753E009E6306 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F345766C41DD10F31E9CEAD0 /* Pods_yojoyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2ACEF029215A753C009E6306 = {
+			isa = PBXGroup;
+			children = (
+				2ACEF034215A753C009E6306 /* yojoy */,
+				2ACEF049215A753D009E6306 /* yojoyTests */,
+				2ACEF054215A753E009E6306 /* yojoyUITests */,
+				2ACEF033215A753C009E6306 /* Products */,
+				BFC0FFD03A42397065DDD68C /* Pods */,
+				C61E59827E85D64507A5F3A5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2ACEF033215A753C009E6306 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2ACEF032215A753C009E6306 /* yojoy.app */,
+				2ACEF046215A753D009E6306 /* yojoyTests.xctest */,
+				2ACEF051215A753E009E6306 /* yojoyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2ACEF034215A753C009E6306 /* yojoy */ = {
+			isa = PBXGroup;
+			children = (
+				2ACEF035215A753C009E6306 /* AppDelegate.swift */,
+				2ACEF037215A753C009E6306 /* ViewController.swift */,
+				2ACEF06F215A8486009E6306 /* View */,
+				2ACEF06E215A8458009E6306 /* ViewController */,
+				2ACEF06D215A8437009E6306 /* Model */,
+				2ACEF03C215A753D009E6306 /* Assets.xcassets */,
+				2ACEF03E215A753D009E6306 /* LaunchScreen.storyboard */,
+				2ACEF041215A753D009E6306 /* Info.plist */,
+				2A9758BC215E32AC009C7FCF /* GoogleService-Info.plist */,
+			);
+			path = yojoy;
+			sourceTree = "<group>";
+		};
+		2ACEF049215A753D009E6306 /* yojoyTests */ = {
+			isa = PBXGroup;
+			children = (
+				2ACEF04A215A753E009E6306 /* yojoyTests.swift */,
+				2ACEF04C215A753E009E6306 /* Info.plist */,
+			);
+			path = yojoyTests;
+			sourceTree = "<group>";
+		};
+		2ACEF054215A753E009E6306 /* yojoyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2ACEF055215A753E009E6306 /* yojoyUITests.swift */,
+				2ACEF057215A753E009E6306 /* Info.plist */,
+			);
+			path = yojoyUITests;
+			sourceTree = "<group>";
+		};
+		2ACEF06D215A8437009E6306 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2ACEF06B215A8431009E6306 /* Sequence.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2ACEF06E215A8458009E6306 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2ACEF063215A77D4009E6306 /* SequencesViewController.swift */,
+				2ACEF065215A788C009E6306 /* SubSequencesViewController.swift */,
+				2A00641D21622A750061EAF9 /* SequenceAnimationViewController.swift */,
+				2A0064192162283F0061EAF9 /* AsanasTableViewController.swift */,
+				2A006417216227530061EAF9 /* MeditationViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2ACEF06F215A8486009E6306 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2ACEF039215A753C009E6306 /* Main.storyboard */,
+				2ACEF067215A78E2009E6306 /* SequenceCell.swift */,
+				2ACEF069215A790E009E6306 /* SubSequenceCell.swift */,
+				2A00641B216228710061EAF9 /* AsanasTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BFC0FFD03A42397065DDD68C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABF554AC89ECC4D13EAB1CC9 /* Pods-yojoy.debug.xcconfig */,
+				27D9B956C0BCC65EA4570E98 /* Pods-yojoy.release.xcconfig */,
+				C48C8C36A02B622A92A37972 /* Pods-yojoyTests.debug.xcconfig */,
+				2D5F497657C5867AE0AF7A70 /* Pods-yojoyTests.release.xcconfig */,
+				09423A394F17BC09AC2C26CB /* Pods-yojoyUITests.debug.xcconfig */,
+				013A8400873B06F16A212D94 /* Pods-yojoyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C61E59827E85D64507A5F3A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD6D9AD2E3497CE666E6512C /* Pods_yojoy.framework */,
+				DC0F1C2FA6CE604AAA916E0A /* Pods_yojoyTests.framework */,
+				5FAE935E949FA88522DF37F7 /* Pods_yojoyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2ACEF031215A753C009E6306 /* yojoy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ACEF05A215A753E009E6306 /* Build configuration list for PBXNativeTarget "yojoy" */;
+			buildPhases = (
+				39D156E418CF9C62ACFCFA3D /* [CP] Check Pods Manifest.lock */,
+				2ACEF02E215A753C009E6306 /* Sources */,
+				2ACEF02F215A753C009E6306 /* Frameworks */,
+				2ACEF030215A753C009E6306 /* Resources */,
+				E49C62B05B88BEBD92A7E7BF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = yojoy;
+			productName = yojoy;
+			productReference = 2ACEF032215A753C009E6306 /* yojoy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2ACEF045215A753D009E6306 /* yojoyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ACEF05D215A753E009E6306 /* Build configuration list for PBXNativeTarget "yojoyTests" */;
+			buildPhases = (
+				F211891EC3F0CC97D490E476 /* [CP] Check Pods Manifest.lock */,
+				2ACEF042215A753D009E6306 /* Sources */,
+				2ACEF043215A753D009E6306 /* Frameworks */,
+				2ACEF044215A753D009E6306 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2ACEF048215A753D009E6306 /* PBXTargetDependency */,
+			);
+			name = yojoyTests;
+			productName = yojoyTests;
+			productReference = 2ACEF046215A753D009E6306 /* yojoyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2ACEF050215A753E009E6306 /* yojoyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ACEF060215A753E009E6306 /* Build configuration list for PBXNativeTarget "yojoyUITests" */;
+			buildPhases = (
+				3CBFE6BBC8AC46E5C197FE92 /* [CP] Check Pods Manifest.lock */,
+				2ACEF04D215A753E009E6306 /* Sources */,
+				2ACEF04E215A753E009E6306 /* Frameworks */,
+				2ACEF04F215A753E009E6306 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2ACEF053215A753E009E6306 /* PBXTargetDependency */,
+			);
+			name = yojoyUITests;
+			productName = yojoyUITests;
+			productReference = 2ACEF051215A753E009E6306 /* yojoyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2ACEF02A215A753C009E6306 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Denise Lutz";
+				TargetAttributes = {
+					2ACEF031215A753C009E6306 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					2ACEF045215A753D009E6306 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 2ACEF031215A753C009E6306;
+					};
+					2ACEF050215A753E009E6306 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 2ACEF031215A753C009E6306;
+					};
+				};
+			};
+			buildConfigurationList = 2ACEF02D215A753C009E6306 /* Build configuration list for PBXProject "yojoy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2ACEF029215A753C009E6306;
+			productRefGroup = 2ACEF033215A753C009E6306 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2ACEF031215A753C009E6306 /* yojoy */,
+				2ACEF045215A753D009E6306 /* yojoyTests */,
+				2ACEF050215A753E009E6306 /* yojoyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2ACEF030215A753C009E6306 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ACEF040215A753D009E6306 /* LaunchScreen.storyboard in Resources */,
+				2A9758BD215E32AC009C7FCF /* GoogleService-Info.plist in Resources */,
+				2ACEF03D215A753D009E6306 /* Assets.xcassets in Resources */,
+				2ACEF03B215A753C009E6306 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ACEF044215A753D009E6306 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ACEF04F215A753E009E6306 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39D156E418CF9C62ACFCFA3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yojoy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CBFE6BBC8AC46E5C197FE92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yojoyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E49C62B05B88BEBD92A7E7BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-yojoy/Pods-yojoy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yojoy/Pods-yojoy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F211891EC3F0CC97D490E476 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yojoyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2ACEF02E215A753C009E6306 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ACEF066215A788C009E6306 /* SubSequencesViewController.swift in Sources */,
+				2ACEF068215A78E2009E6306 /* SequenceCell.swift in Sources */,
+				2ACEF06C215A8431009E6306 /* Sequence.swift in Sources */,
+				2ACEF038215A753C009E6306 /* ViewController.swift in Sources */,
+				2ACEF036215A753C009E6306 /* AppDelegate.swift in Sources */,
+				2ACEF064215A77D4009E6306 /* SequencesViewController.swift in Sources */,
+				2A00641C216228710061EAF9 /* AsanasTableViewCell.swift in Sources */,
+				2A006418216227530061EAF9 /* MeditationViewController.swift in Sources */,
+				2ACEF06A215A790E009E6306 /* SubSequenceCell.swift in Sources */,
+				2A00641A2162283F0061EAF9 /* AsanasTableViewController.swift in Sources */,
+				2A00641E21622A750061EAF9 /* SequenceAnimationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ACEF042215A753D009E6306 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ACEF04B215A753E009E6306 /* yojoyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ACEF04D215A753E009E6306 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ACEF056215A753E009E6306 /* yojoyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2ACEF048215A753D009E6306 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2ACEF031215A753C009E6306 /* yojoy */;
+			targetProxy = 2ACEF047215A753D009E6306 /* PBXContainerItemProxy */;
+		};
+		2ACEF053215A753E009E6306 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2ACEF031215A753C009E6306 /* yojoy */;
+			targetProxy = 2ACEF052215A753E009E6306 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2ACEF039215A753C009E6306 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ACEF03A215A753C009E6306 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2ACEF03E215A753D009E6306 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ACEF03F215A753D009E6306 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2ACEF058215A753E009E6306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2ACEF059215A753E009E6306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2ACEF05B215A753E009E6306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABF554AC89ECC4D13EAB1CC9 /* Pods-yojoy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7W92N86HFD;
+				INFOPLIST_FILE = yojoy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dlutz.yojoy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2ACEF05C215A753E009E6306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27D9B956C0BCC65EA4570E98 /* Pods-yojoy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7W92N86HFD;
+				INFOPLIST_FILE = yojoy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dlutz.yojoy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2ACEF05E215A753E009E6306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C48C8C36A02B622A92A37972 /* Pods-yojoyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7W92N86HFD;
+				INFOPLIST_FILE = yojoyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dlutz.yojoyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yojoy.app/yojoy";
+			};
+			name = Debug;
+		};
+		2ACEF05F215A753E009E6306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D5F497657C5867AE0AF7A70 /* Pods-yojoyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7W92N86HFD;
+				INFOPLIST_FILE = yojoyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dlutz.yojoyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yojoy.app/yojoy";
+			};
+			name = Release;
+		};
+		2ACEF061215A753E009E6306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09423A394F17BC09AC2C26CB /* Pods-yojoyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7W92N86HFD;
+				INFOPLIST_FILE = yojoyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dlutz.yojoyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = yojoy;
+			};
+			name = Debug;
+		};
+		2ACEF062215A753E009E6306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 013A8400873B06F16A212D94 /* Pods-yojoyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7W92N86HFD;
+				INFOPLIST_FILE = yojoyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dlutz.yojoyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = yojoy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2ACEF02D215A753C009E6306 /* Build configuration list for PBXProject "yojoy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ACEF058215A753E009E6306 /* Debug */,
+				2ACEF059215A753E009E6306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ACEF05A215A753E009E6306 /* Build configuration list for PBXNativeTarget "yojoy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ACEF05B215A753E009E6306 /* Debug */,
+				2ACEF05C215A753E009E6306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ACEF05D215A753E009E6306 /* Build configuration list for PBXNativeTarget "yojoyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ACEF05E215A753E009E6306 /* Debug */,
+				2ACEF05F215A753E009E6306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ACEF060215A753E009E6306 /* Build configuration list for PBXNativeTarget "yojoyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ACEF061215A753E009E6306 /* Debug */,
+				2ACEF062215A753E009E6306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2ACEF02A215A753C009E6306 /* Project object */;
+}
