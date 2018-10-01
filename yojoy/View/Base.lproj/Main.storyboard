@@ -49,14 +49,6 @@
                                                     <rect key="frame" x="15" y="9" width="80" height="80"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ty-bm-PO0">
-                                                    <rect key="frame" x="320" y="29" width="30" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button" image="info-50"/>
-                                                    <connections>
-                                                        <action selector="infoButton:" destination="uNH-gQ-pqu" eventType="touchUpInside" id="bgZ-Ok-JO2"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
@@ -145,8 +137,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jg4-Ix-Wam">
-                                                    <rect key="frame" x="25" y="39" width="325" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jg4-Ix-Wam">
+                                                    <rect key="frame" x="25" y="39" width="297" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -157,6 +149,7 @@
                                                     <state key="normal" title="Button" image="info-50"/>
                                                     <connections>
                                                         <action selector="infoButton:" destination="io9-GY-tkT" eventType="touchUpInside" id="U68-tY-Qwo"/>
+                                                        <action selector="showAlert:" destination="io9-GY-tkT" eventType="touchUpInside" id="KFF-vu-cgR"/>
                                                     </connections>
                                                 </button>
                                             </subviews>

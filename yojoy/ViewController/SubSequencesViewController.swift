@@ -23,10 +23,15 @@ class SubSequencesViewController: UIViewController, UITableViewDataSource, UITab
         self.tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
     
+    // MARK: - Table View Data Source
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return selectedSequenceArray.count
     }
     
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "subCell", for: indexPath) as! SubSequenceCell
@@ -35,6 +40,16 @@ class SubSequencesViewController: UIViewController, UITableViewDataSource, UITab
         cell.subTopicLabel.text = sequence.title
         
         return cell
+    }
+    
+    // MARK: - Functions
+    
+    @IBAction func showAlert(_ sender: Any) {
+        let alertController = UIAlertController(title: "iOScreator", message:
+            "Hello, world!", preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+        
+        self.present(alertController, animated: true, completion: nil)
     }
 
     /*
