@@ -12,6 +12,8 @@ import FirebaseDatabase
 class SequencesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBAction func infoButton(_ sender: UIButton) {
+    }
     
     var ref: DatabaseReference?
     

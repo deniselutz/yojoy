@@ -11,7 +11,9 @@ import UIKit
 class SubSequencesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
-
+    @IBAction func infoButton(_ sender: UIButton) {
+    }
+    
     var selectedSequenceArray = [Details]()
 
     override func viewDidLoad() {
