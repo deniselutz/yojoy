@@ -157,7 +157,6 @@
                                                 <constraint firstItem="jg4-Ix-Wam" firstAttribute="leading" secondItem="Vuj-8j-5fz" secondAttribute="leadingMargin" constant="10" id="TVL-gB-vfL"/>
                                                 <constraint firstItem="jg4-Ix-Wam" firstAttribute="top" secondItem="Vuj-8j-5fz" secondAttribute="topMargin" constant="28" id="XAU-aB-0DZ"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="jg4-Ix-Wam" secondAttribute="bottom" constant="29" id="Xvx-Ec-C6H"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="jg4-Ix-Wam" secondAttribute="trailing" constant="10" id="twU-MR-TQK"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -308,7 +307,7 @@
     </scenes>
     <resources>
         <image name="baum_50" width="25" height="25"/>
-        <image name="info-50" width="50" height="50"/>
+        <image name="info-50" width="25" height="25"/>
         <image name="isomatte-50" width="25" height="25"/>
         <image name="meditation-50" width="25" height="25"/>
         <image name="yogini" width="169" height="169"/>

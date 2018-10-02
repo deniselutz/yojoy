@@ -25,7 +25,7 @@ class SequencesViewController: UIViewController, UITableViewDataSource, UITableV
         loadSequences()
     }
 
-    // Table View Data Source
+    // MARK: - Table View Data Source
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sequencesArray.count
