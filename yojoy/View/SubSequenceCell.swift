@@ -10,5 +10,6 @@ import UIKit
 
 class SubSequenceCell: UITableViewCell {
     
+    @IBOutlet weak var moreInfo: UITextView!
     @IBOutlet weak var subTopicLabel: UILabel!
 }

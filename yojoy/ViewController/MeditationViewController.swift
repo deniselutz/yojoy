@@ -4,7 +4,7 @@
 //
 //  Created by Denise Lutz on 01.10.18.
 //  Copyright © 2018 Denise Lutz. All rights reserved.
-//
+//  Tutorial: https://www.youtube.com/watch?v=iNEjh6zDUsg
 
 import UIKit
 import AVFoundation
@@ -25,7 +25,6 @@ class MeditationViewController: UIViewController {
     @IBOutlet weak var countdownLabel: UILabel!
     
     @IBOutlet weak var sliderOutlet: UISlider!
-    
     @IBAction func slider(_ sender: UISlider) {
         
        // sender = slider; convert to Int
