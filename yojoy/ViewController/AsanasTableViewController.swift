@@ -9,6 +9,9 @@
 import UIKit
 
 class AsanasTableViewController: UITableViewController {
+    
+//    var asanasArray = [String]()
+    var asanasArray = ["Tadasana: Berghaltung","Vrikshasana: Baum","Matsyasana: Fisch","Matsyendrasana: Drehsitz","Mayurasana: Pfau","Padangushthasana: Großzehenhaltung","Sarvangasana: Schulterstand","Shirshasana: Schulterstand"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,32 +28,25 @@ class AsanasTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return asanasArray.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! AsanasTableViewCell
+        let asana = asanasArray[indexPath.row]
 
-        // Configure the cell...
+        cell.asanaLabel.text = asana
+        cell.backgroundColor = UIColor(white: 1, alpha: 0.85)
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

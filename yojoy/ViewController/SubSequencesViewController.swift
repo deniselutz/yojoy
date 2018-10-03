@@ -11,7 +11,10 @@ import UIKit
 class SubSequencesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
-
+    
+    @IBAction func infoButton(_ sender: UIButton) {
+    }
+    
     var selectedSequenceArray = [Details]()
 
     override func viewDidLoad() {
@@ -21,10 +24,11 @@ class SubSequencesViewController: UIViewController, UITableViewDataSource, UITab
         self.tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
     
+    // MARK: - Table View Data Source
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return selectedSequenceArray.count
     }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "subCell", for: indexPath) as! SubSequenceCell
@@ -34,6 +38,21 @@ class SubSequencesViewController: UIViewController, UITableViewDataSource, UITab
         
         return cell
     }
+    
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//    }
+    
+    // MARK: - Functions
+    
+    @IBAction func showAlert(_ sender: Any) {
+        
+            let alertController = UIAlertController(title: "UI Alert", message:
+                "Hello, world!", preferredStyle: UIAlertControllerStyle.alert)
+        
+             alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+        
+             self.present(alertController, animated: true, completion: nil)
+       }
 
     /*
     // MARK: - Navigation
@@ -44,5 +63,4 @@ class SubSequencesViewController: UIViewController, UITableViewDataSource, UITab
         // Pass the selected object to the new view controller.
     }
     */
-
 }
