@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ButtonPressedDelegate : class {
+protocol ButtonPressedDelegate {
     func buttonPressed(_ tag: Int)
 }
 
