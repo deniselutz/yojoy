@@ -8,17 +8,33 @@
 
 import UIKit
 
-class SubSequencesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class SubSequencesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ButtonPressedDelegate {
+    
+    func buttonPressed(_ tag: Int) {
+        print("button was pressed with tag: \(tag)")
+        switch tag {
+        case 0:
+            showAlert(with: "first cell")
+        case 1:
+            showAlert(with: "second cell")
+        default: break
+        }
+    }
+    
     
     @IBOutlet weak var tableView: UITableView!
     
-    @IBAction func infoButton(_ sender: UIButton) {
-    }
     
     var selectedSequenceArray = [Details]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // background image
+        let backgroundImage = UIImage(named: "yogini.png")
+        let imageView = UIImageView(image: backgroundImage)
+        self.tableView.backgroundView = imageView
+        imageView.contentMode = .scaleAspectFit
         
         // no parting lines below the table
         self.tableView.tableFooterView = UIView(frame: CGRect.zero)
@@ -34,7 +50,17 @@ class SubSequencesViewController: UIViewController, UITableViewDataSource, UITab
         let cell = tableView.dequeueReusableCell(withIdentifier: "subCell", for: indexPath) as! SubSequenceCell
         let sequence = selectedSequenceArray[indexPath.row]
         
+        switch indexPath.row {
+        case 0, 1:
+            cell.cellDelegate = self
+            cell.tag = indexPath.row
+        default: break
+            
+        }
+        
+        
         cell.subTopicLabel.text = sequence.title
+        cell.backgroundColor = UIColor(white: 1, alpha: 0.85)
         
         return cell
     }
@@ -44,10 +70,10 @@ class SubSequencesViewController: UIViewController, UITableViewDataSource, UITab
     
     // MARK: - Functions
     
-    @IBAction func showAlert(_ sender: Any) {
+    func showAlert(with text: String) {
         
             let alertController = UIAlertController(title: "UI Alert", message:
-                "Hello, world!", preferredStyle: UIAlertControllerStyle.alert)
+                text, preferredStyle: UIAlertControllerStyle.alert)
         
              alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
         

@@ -8,8 +8,21 @@
 
 import UIKit
 
+protocol ButtonPressedDelegate : class {
+    func buttonPressed(_ tag: Int)
+}
+
 class SubSequenceCell: UITableViewCell {
     
-    @IBOutlet weak var moreInfo: UITextView!
+    var cellDelegate: ButtonPressedDelegate?
+
+//    @IBOutlet weak var moreInfo: UITextView!
     @IBOutlet weak var subTopicLabel: UILabel!
+    @IBOutlet weak var infoButtonOutlet: UIButton!
+    
+    @IBAction func infoButtonPressed(_ sender: UIButton) {
+        cellDelegate?.buttonPressed(self.tag)
+    }
+    
+    
 }
