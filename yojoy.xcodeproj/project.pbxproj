@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2A006418216227530061EAF9 /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A006417216227530061EAF9 /* MeditationViewController.swift */; };
-		2A00641A2162283F0061EAF9 /* AsanasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0064192162283F0061EAF9 /* AsanasTableViewController.swift */; };
-		2A00641C216228710061EAF9 /* AsanasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A00641B216228710061EAF9 /* AsanasTableViewCell.swift */; };
 		2A00641E21622A750061EAF9 /* SequenceAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A00641D21622A750061EAF9 /* SequenceAnimationViewController.swift */; };
 		2A0A5FCB216406CF00B48F45 /* AudioFiles in Resources */ = {isa = PBXBuildFile; fileRef = 2A0A5FCA216406CF00B48F45 /* AudioFiles */; };
 		2A9758BD215E32AC009C7FCF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A9758BC215E32AC009C7FCF /* GoogleService-Info.plist */; };
+		2A9B07A021660F15008533DD /* AsanasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9B079F21660F15008533DD /* AsanasViewController.swift */; };
+		2A9B07A22166117B008533DD /* AsanaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9B07A12166117B008533DD /* AsanaCollectionViewCell.swift */; };
+		2A9B07A821662D4D008533DD /* AsanaDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9B07A721662D4D008533DD /* AsanaDetailsViewController.swift */; };
 		2ACEF036215A753C009E6306 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACEF035215A753C009E6306 /* AppDelegate.swift */; };
 		2ACEF038215A753C009E6306 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACEF037215A753C009E6306 /* ViewController.swift */; };
 		2ACEF03B215A753C009E6306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACEF039215A753C009E6306 /* Main.storyboard */; };
@@ -52,11 +53,12 @@
 		09423A394F17BC09AC2C26CB /* Pods-yojoyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yojoyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yojoyUITests/Pods-yojoyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		27D9B956C0BCC65EA4570E98 /* Pods-yojoy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yojoy.release.xcconfig"; path = "Pods/Target Support Files/Pods-yojoy/Pods-yojoy.release.xcconfig"; sourceTree = "<group>"; };
 		2A006417216227530061EAF9 /* MeditationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
-		2A0064192162283F0061EAF9 /* AsanasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsanasTableViewController.swift; sourceTree = "<group>"; };
-		2A00641B216228710061EAF9 /* AsanasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsanasTableViewCell.swift; sourceTree = "<group>"; };
 		2A00641D21622A750061EAF9 /* SequenceAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceAnimationViewController.swift; sourceTree = "<group>"; };
 		2A0A5FCA216406CF00B48F45 /* AudioFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AudioFiles; sourceTree = "<group>"; };
 		2A9758BC215E32AC009C7FCF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2A9B079F21660F15008533DD /* AsanasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsanasViewController.swift; sourceTree = "<group>"; };
+		2A9B07A12166117B008533DD /* AsanaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsanaCollectionViewCell.swift; sourceTree = "<group>"; };
+		2A9B07A721662D4D008533DD /* AsanaDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsanaDetailsViewController.swift; sourceTree = "<group>"; };
 		2ACEF032215A753C009E6306 /* yojoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yojoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ACEF035215A753C009E6306 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ACEF037215A753C009E6306 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -182,7 +184,8 @@
 				2ACEF063215A77D4009E6306 /* SequencesViewController.swift */,
 				2ACEF065215A788C009E6306 /* SubSequencesViewController.swift */,
 				2A00641D21622A750061EAF9 /* SequenceAnimationViewController.swift */,
-				2A0064192162283F0061EAF9 /* AsanasTableViewController.swift */,
+				2A9B079F21660F15008533DD /* AsanasViewController.swift */,
+				2A9B07A721662D4D008533DD /* AsanaDetailsViewController.swift */,
 				2A006417216227530061EAF9 /* MeditationViewController.swift */,
 			);
 			path = ViewController;
@@ -194,7 +197,7 @@
 				2ACEF039215A753C009E6306 /* Main.storyboard */,
 				2ACEF067215A78E2009E6306 /* SequenceCell.swift */,
 				2ACEF069215A790E009E6306 /* SubSequenceCell.swift */,
-				2A00641B216228710061EAF9 /* AsanasTableViewCell.swift */,
+				2A9B07A12166117B008533DD /* AsanaCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -454,14 +457,15 @@
 			files = (
 				2ACEF066215A788C009E6306 /* SubSequencesViewController.swift in Sources */,
 				2ACEF068215A78E2009E6306 /* SequenceCell.swift in Sources */,
+				2A9B07A22166117B008533DD /* AsanaCollectionViewCell.swift in Sources */,
 				2ACEF06C215A8431009E6306 /* Sequence.swift in Sources */,
+				2A9B07A821662D4D008533DD /* AsanaDetailsViewController.swift in Sources */,
 				2ACEF038215A753C009E6306 /* ViewController.swift in Sources */,
 				2ACEF036215A753C009E6306 /* AppDelegate.swift in Sources */,
 				2ACEF064215A77D4009E6306 /* SequencesViewController.swift in Sources */,
-				2A00641C216228710061EAF9 /* AsanasTableViewCell.swift in Sources */,
+				2A9B07A021660F15008533DD /* AsanasViewController.swift in Sources */,
 				2A006418216227530061EAF9 /* MeditationViewController.swift in Sources */,
 				2ACEF06A215A790E009E6306 /* SubSequenceCell.swift in Sources */,
-				2A00641A2162283F0061EAF9 /* AsanasTableViewController.swift in Sources */,
 				2A00641E21622A750061EAF9 /* SequenceAnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
