@@ -14,9 +14,9 @@ class SubSequencesViewController: UIViewController, UITableViewDataSource, UITab
         print("button was pressed with tag: \(tag)")
         switch tag {
         case 0:
-            showAlert(with: "first cell")
+            showAlert(title: "first cell", description: "test")
         case 1:
-            showAlert(with: "second cell")
+            showAlert(title: "second cell", description: "test2")
         default: break
         }
     }
@@ -50,13 +50,16 @@ class SubSequencesViewController: UIViewController, UITableViewDataSource, UITab
         let cell = tableView.dequeueReusableCell(withIdentifier: "subCell", for: indexPath) as! SubSequenceCell
         let sequence = selectedSequenceArray[indexPath.row]
         
-        switch indexPath.row {
-        case 0, 1:
-            cell.cellDelegate = self
-            cell.tag = indexPath.row
-        default: break
-            
-        }
+        cell.cellDelegate = self
+        cell.tag = indexPath.row
+        
+//        switch indexPath.row {
+//        case 0, 1:
+//            cell.cellDelegate = self
+//            cell.tag = indexPath.row
+//        default: break
+//
+//        }
         
         
         cell.subTopicLabel.text = sequence.title
@@ -65,17 +68,14 @@ class SubSequencesViewController: UIViewController, UITableViewDataSource, UITab
         return cell
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//    }
-    
     // MARK: - Functions
     
-    func showAlert(with text: String) {
+    func showAlert(title text: String, description subtext: String) {
         
-            let alertController = UIAlertController(title: "UI Alert", message:
-                text, preferredStyle: UIAlertControllerStyle.alert)
+            let alertController = UIAlertController(title: text, message:
+                subtext, preferredStyle: UIAlertControllerStyle.alert)
         
-             alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
         
              self.present(alertController, animated: true, completion: nil)
        }

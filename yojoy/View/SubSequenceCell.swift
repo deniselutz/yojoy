@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ButtonPressedDelegate : class {
+protocol ButtonPressedDelegate {
     func buttonPressed(_ tag: Int)
 }
 
@@ -16,7 +16,6 @@ class SubSequenceCell: UITableViewCell {
     
     var cellDelegate: ButtonPressedDelegate?
 
-//    @IBOutlet weak var moreInfo: UITextView!
     @IBOutlet weak var subTopicLabel: UILabel!
     @IBOutlet weak var infoButtonOutlet: UIButton!
     

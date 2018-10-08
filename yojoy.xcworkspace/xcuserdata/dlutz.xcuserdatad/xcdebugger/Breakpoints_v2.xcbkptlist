@@ -6,32 +6,142 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "yojoy/ViewController/SubSequencesViewController.swift"
-            timestampString = "560420580.535292"
+            timestampString = "560681566.692257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "buttonPressed(_:)"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "SubSequencesViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "yojoy/ViewController/SubSequencesViewController.swift"
+            timestampString = "560681566.692559"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "showAlert(title:description:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "yojoy/ViewController/SubSequencesViewController.swift"
-            timestampString = "560420580.535639"
+            filePath = "yojoy/View/SubSequenceCell.swift"
+            timestampString = "560681188.101416"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "ButtonPressedDelegate"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "yojoy/View/SubSequenceCell.swift"
+            timestampString = "560681188.101463"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "SubSequenceCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "yojoy.SubSequenceCell.cellDelegate.getter : Swift.Optional&lt;yojoy.ButtonPressedDelegate&gt;"
+                  moduleName = "yojoy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dlutz/Documents/yojoy/yojoy/View/SubSequenceCell.swift"
+                  timestampString = "560681051.2158099"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "81">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "yojoy.SubSequenceCell.cellDelegate.setter : Swift.Optional&lt;yojoy.ButtonPressedDelegate&gt;"
+                  moduleName = "yojoy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dlutz/Documents/yojoy/yojoy/View/SubSequenceCell.swift"
+                  timestampString = "560681051.218118"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "119">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "yojoy.SubSequenceCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; yojoy.SubSequenceCell"
+                  moduleName = "yojoy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dlutz/Documents/yojoy/yojoy/View/SubSequenceCell.swift"
+                  timestampString = "560681051.220237"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "121">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "yojoy.SubSequenceCell.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;yojoy.SubSequenceCell&gt;"
+                  moduleName = "yojoy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dlutz/Documents/yojoy/yojoy/View/SubSequenceCell.swift"
+                  timestampString = "560681051.222219"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "86">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "yojoy/View/SubSequenceCell.swift"
+            timestampString = "560681188.101504"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "infoButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

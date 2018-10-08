@@ -198,10 +198,10 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgA-Ln-jL0">
-                                                    <rect key="frame" x="306" y="34" width="31" height="25"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgA-Ln-jL0">
+                                                    <rect key="frame" x="340" y="37" width="25" height="25"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
+                                                    <state key="normal" image="info-50"/>
                                                     <connections>
                                                         <action selector="infoButtonPressed:" destination="Ipn-Dr-5nC" eventType="touchUpInside" id="BSr-SX-yyv"/>
                                                     </connections>
@@ -479,6 +479,7 @@
     <resources>
         <image name="baum_50" width="25" height="25"/>
         <image name="filter-50" width="25" height="25"/>
+        <image name="info-50" width="25" height="25"/>
         <image name="isomatte-50" width="25" height="25"/>
         <image name="meditation-50" width="25" height="25"/>
         <image name="menue-50" width="25" height="25"/>
