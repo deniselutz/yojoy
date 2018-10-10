@@ -11,19 +11,15 @@ import UIKit
 class SubSequencesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ButtonPressedDelegate {
     
     func buttonPressed(_ tag: Int) {
-        print("button was pressed with tag: \(tag)")
-        switch tag {
-        case 0:
-            showAlert(title: "first cell", description: "test")
-        case 1:
-            showAlert(title: "second cell", description: "test2")
-        default: break
-        }
+        
+        let buttonActionText = selectedSequenceArray[tag].title
+        let buttonActionDescription = selectedSequenceArray[tag].description
+        
+        showAlert(title: buttonActionText, description: buttonActionDescription)
     }
     
     
     @IBOutlet weak var tableView: UITableView!
-    
     
     var selectedSequenceArray = [Details]()
 
@@ -52,15 +48,6 @@ class SubSequencesViewController: UIViewController, UITableViewDataSource, UITab
         
         cell.cellDelegate = self
         cell.tag = indexPath.row
-        
-//        switch indexPath.row {
-//        case 0, 1:
-//            cell.cellDelegate = self
-//            cell.tag = indexPath.row
-//        default: break
-//
-//        }
-        
         
         cell.subTopicLabel.text = sequence.title
         cell.backgroundColor = UIColor(white: 1, alpha: 0.85)

@@ -54,7 +54,7 @@ class SequencesViewController: UIViewController, UITableViewDataSource, UITableV
                 //clearing list
                 self.sequencesArray.removeAll()
                 
-                //iterating through all the values
+                //for-loop; iterating through all the values
                 for sequences in snapshot.children.allObjects as! [DataSnapshot] {
                     //getting values
                     let sequenceObject = sequences.value as? [String: AnyObject]
@@ -112,14 +112,26 @@ class SequencesViewController: UIViewController, UITableViewDataSource, UITableV
                 break
             }
             
-            // database stuff; please refer ubove (loadSequences))
+            // observing the data changes
             ref?.child(childId).observeSingleEvent(of: .value, with: { (snapshot) in
+                
+                // if the reference has some values
                 if snapshot.childrenCount > 0 {
+                    
+                    //for-loop; iterating through all the values
                     for sequences in snapshot.children.allObjects as! [DataSnapshot] {
+                        //getting values
                         let sequenceObject = sequences.value as? [String: AnyObject]
                         let sequenceTitle = sequenceObject?["title"]
-                        let detail = Details(title: sequenceTitle as! String)
+                        let sequenceDescription = sequenceObject?["description"]
+                        
+                         //creating sequence object with model and fetched values
+                        let detail = Details(title: sequenceTitle as! String, description: sequenceDescription as! String)
+                        
+                         //appending it to list
                         destination.selectedSequenceArray.append(detail)
+                        
+                        //reloading the destination.tableview
                         destination.tableView.reloadData()
                     }
                 }
@@ -127,3 +139,4 @@ class SequencesViewController: UIViewController, UITableViewDataSource, UITableV
         }
     }
 }
+
