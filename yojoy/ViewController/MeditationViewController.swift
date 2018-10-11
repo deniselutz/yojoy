@@ -72,6 +72,8 @@ class MeditationViewController: UIViewController {
     private func resetToDefault() {
         sliderOutlet.setValue(30, animated: true)
         countdownLabel.text = "30"
+//        startOutlet.isHidden = false
+//        stopOutlet.isHidden = true
     }
     
     @IBOutlet weak var stopOutlet: UIButton!

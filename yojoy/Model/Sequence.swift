@@ -22,10 +22,10 @@ struct Sequence {
 struct Details {
     
     let title: String
-//    let description: String
+    let description: String
     
-    init(title: String) {
+    init(title: String, description: String) {
         self.title = title
-//        self.description = description
+        self.description = description
     }
 }

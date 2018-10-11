@@ -16,7 +16,6 @@ class SubSequenceCell: UITableViewCell {
     
     var cellDelegate: ButtonPressedDelegate?
 
-//    @IBOutlet weak var moreInfo: UITextView!
     @IBOutlet weak var subTopicLabel: UILabel!
     @IBOutlet weak var infoButtonOutlet: UIButton!
     
