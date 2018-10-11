@@ -15,7 +15,7 @@ class MeditationViewController: UIViewController {
     
     var audioPlayer = AVAudioPlayer()
     
-    var timeCount = 100 {
+    var timeCount = 30 {
         didSet {
             // convert timeCount to String and place it in countdownLabel
             countdownLabel.text = String(timeCount)
