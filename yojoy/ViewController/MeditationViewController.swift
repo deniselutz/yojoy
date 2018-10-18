@@ -14,10 +14,10 @@ class MeditationViewController: UIViewController {
     var timer = Timer()
     
     var audioPlayer = AVAudioPlayer()
-    
+
     var timeCount = 30 {
         didSet {
-            // convert timeCount to String and place it in countdownLabel
+            // convert timeCount to String and place it in countdownLabel to keep UI in sync
             countdownLabel.text = String(timeCount)
         }
     }
@@ -27,7 +27,7 @@ class MeditationViewController: UIViewController {
     @IBOutlet weak var sliderOutlet: UISlider!
     @IBAction func slider(_ sender: UISlider) {
         
-       // sender = slider; convert to Int
+       // sender = slider; convert from Float to Int
         timeCount = Int(sender.value)
     }
     
@@ -36,11 +36,15 @@ class MeditationViewController: UIViewController {
         // visibility
         stopOutlet.isHidden = true
 
+        // Do, Try, Catch: Error Handling
         do {
             let audioPath = Bundle.main.path(forResource: "singingBowl", ofType: ".mp3", inDirectory: "AudioFiles")
+            // trying to get data contents of URL; contentsOf: URL is a function that throws; a throw function has to be wrapped in a do-try-catch-block
             try audioPlayer = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
         }
+        // if the try fails, then we go into the catch block
         catch {
+            // Handle the error
             print("No Audiofile found!")
         }
     }
@@ -59,6 +63,7 @@ class MeditationViewController: UIViewController {
         timeCount -= 1
         
         if (timeCount == 0) {
+            
             // stop the timer
             timer.invalidate()
             
@@ -71,7 +76,6 @@ class MeditationViewController: UIViewController {
     
     private func resetToDefault() {
         sliderOutlet.setValue(30, animated: true)
-        countdownLabel.text = "30"
 //        startOutlet.isHidden = false
 //        stopOutlet.isHidden = true
     }

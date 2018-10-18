@@ -8,8 +8,10 @@
 
 import UIKit
 
+// the controller declares that it implements the delegation protocol (4)
 class SubSequencesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ButtonPressedDelegate {
     
+    // the controller implements the protocol and its function (6)
     func buttonPressed(_ tag: Int) {
         
         let buttonActionText = selectedSequenceArray[tag].title
@@ -46,7 +48,9 @@ class SubSequencesViewController: UIViewController, UITableViewDataSource, UITab
         let cell = tableView.dequeueReusableCell(withIdentifier: "subCell", for: indexPath) as! SubSequenceCell
         let sequence = selectedSequenceArray[indexPath.row]
         
+        // the controller sets the delegate of the cell to itself using the delegate Property in #2 (5)
         cell.cellDelegate = self
+        // use tag to identify the infoButtons
         cell.tag = indexPath.row
         
         cell.subTopicLabel.text = sequence.title
@@ -62,9 +66,10 @@ class SubSequencesViewController: UIViewController, UITableViewDataSource, UITab
             let alertController = UIAlertController(title: text, message:
                 subtext, preferredStyle: UIAlertControllerStyle.alert)
         
-             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
+            alertController.view.tintColor = #colorLiteral(red: 0.47081393, green: 0.4458181858, blue: 0.5415937304, alpha: 1)
         
-             self.present(alertController, animated: true, completion: nil)
+            self.present(alertController, animated: true, completion: nil)
        }
 
     /*

@@ -43,8 +43,10 @@ class AsanasViewController: UIViewController, UICollectionViewDelegate, UICollec
     // Populate Views
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! AsanaCollectionViewCell
+        
         cell.asanaImageView.image = UIImage(named: asanasImagesArray[indexPath.row] + ".png")
         cell.asanaNameLabel.text = asanasNamesArray[indexPath.row]
+        
         return cell
     }
 

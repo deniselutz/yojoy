@@ -34,11 +34,9 @@ class SequencesViewController: UIViewController, UITableViewDataSource, UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SequenceCell
         let sequence = sequencesArray[indexPath.row]
-        let subSequence = sequencesArray[indexPath.row]
-        
         
         cell.topicLabel.text = sequence.chapter
-        cell.subTopicLabel.text = subSequence.subChapter
+        cell.subTopicLabel.text = sequence.subChapter
         
         return cell
     }
@@ -51,8 +49,8 @@ class SequencesViewController: UIViewController, UITableViewDataSource, UITableV
             // if the reference has some values
             if snapshot.childrenCount > 0 {
                 
-                //clearing list
-                self.sequencesArray.removeAll()
+//                //clearing list
+//                self.sequencesArray.removeAll()
                 
                 //for-loop; iterating through all the values
                 for sequences in snapshot.children.allObjects as! [DataSnapshot] {
@@ -72,8 +70,10 @@ class SequencesViewController: UIViewController, UITableViewDataSource, UITableV
                 }
             }
         })
-        
     }
+    
+    
+    // MARK: - Table View Delegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "toSubSequence", sender: self)

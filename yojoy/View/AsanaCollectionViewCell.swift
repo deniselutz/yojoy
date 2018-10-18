@@ -9,8 +9,6 @@
 import UIKit
 
 class AsanaCollectionViewCell: UICollectionViewCell {
-    
     @IBOutlet weak var asanaImageView: UIImageView!
-    
     @IBOutlet weak var asanaNameLabel: UILabel!
 }

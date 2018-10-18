@@ -9,7 +9,9 @@
 import UIKit
 
 class SequenceCell: UITableViewCell {
+    
     @IBOutlet weak var topicImage: UIImageView!
     @IBOutlet weak var topicLabel: UILabel!
     @IBOutlet weak var subTopicLabel: UILabel!
+    
 }
