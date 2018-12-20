@@ -56,7 +56,7 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func startButton(_ sender: UIButton) {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MeditationViewController.counter), userInfo: nil, repeats: true)
         
-        // visibilities
+        // default visibility settings
         sliderOutlet.isHidden = true
         startOutlet.isHidden = true
         stopOutlet.isHidden = false
