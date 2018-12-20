@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class MeditationViewController: UIViewController {
+class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
     
     var timer = Timer()
     
@@ -41,6 +41,9 @@ class MeditationViewController: UIViewController {
             let audioPath = Bundle.main.path(forResource: "singingBowl", ofType: ".mp3", inDirectory: "AudioFiles")
             // trying to get data contents of URL; contentsOf: URL is a function that throws; a throw function has to be wrapped in a do-try-catch-block
             try audioPlayer = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
+            
+            // set to self, that AVAudioPlayerDelegate Methods can be triggered
+            audioPlayer.delegate = self
         }
         // if the try fails, then we go into the catch block
         catch {
@@ -70,14 +73,18 @@ class MeditationViewController: UIViewController {
             // plays sound
             audioPlayer.play()
             
-            resetToDefault()
+            audioPlayerDidFinishPlaying(audioPlayer, successfully: false)
         }
     }
     
-    private func resetToDefault() {
-        sliderOutlet.setValue(30, animated: true)
-//        startOutlet.isHidden = false
-//        stopOutlet.isHidden = true
+    public func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        if flag == true {
+            timeCount = 30
+            sliderOutlet.setValue(30, animated: true)
+            sliderOutlet.isHidden = false
+            startOutlet.isHidden = false
+            stopOutlet.isHidden = true
+        }
     }
     
     @IBOutlet weak var stopOutlet: UIButton!
@@ -89,11 +96,10 @@ class MeditationViewController: UIViewController {
         // set countdownLabel back to 30
         timeCount = 30
         
-        resetToDefault()
-        
         audioPlayer.stop()
         
         // visibilities
+        sliderOutlet.setValue(30, animated: true)
         sliderOutlet.isHidden = false
         startOutlet.isHidden = false
         stopOutlet.isHidden = true
