@@ -17,17 +17,20 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
 
     var timeCount = 30 {
         didSet {
-            // convert timeCount to String and place it in countdownLabel to keep UI in sync
-            countdownLabel.text = String(timeCount)
+            // creates Tupel with Integer Values for hour, minutes, seconds
+            let (h, m, s) = secondsToHoursMinutesSeconds(seconds: timeCount)
+            // convert Int to String with leading zeros; format: 00:00:00
+            countdownLabel.text = String(format: "%02d:%02d:%02d", h, m, s)
         }
     }
     
     @IBOutlet weak var countdownLabel: UILabel!
     
     @IBOutlet weak var sliderOutlet: UISlider!
+    
     @IBAction func slider(_ sender: UISlider) {
         
-       // sender = slider; convert from Float to Int
+        // sender = slider; convert from Float to Int
         timeCount = Int(sender.value)
     }
     
@@ -105,7 +108,7 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
         stopOutlet.isHidden = true
     }
 
-//    func secondsToHoursMinutesSeconds (seconds : Int) -> (Int, Int, Int) {
-//        return (seconds / 3600, (seconds % 3600) / 60, (seconds % 3600) % 60)
-//    }
+    func secondsToHoursMinutesSeconds (seconds : Int) -> (Int, Int, Int) {
+        return (seconds / 3600, (seconds % 3600) / 60, (seconds % 60))
+    }
 }

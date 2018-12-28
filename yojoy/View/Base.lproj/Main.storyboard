@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aqP-iJ-Jj4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aqP-iJ-Jj4">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -109,22 +107,22 @@
                                 <color key="textColor" red="0.73725490199999999" green="0.69019607839999997" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="5" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="qy1-Bj-RcG">
-                                <rect key="frame" x="14" y="500" width="347" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1800" minValue="300" maxValue="3600" translatesAutoresizingMaskIntoConstraints="NO" id="qy1-Bj-RcG">
+                                <rect key="frame" x="14" y="475" width="347" height="31"/>
                                 <color key="tintColor" red="0.73725490199999999" green="0.69019607839999997" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="slider:" destination="JZI-Ia-L4p" eventType="valueChanged" id="mDq-HZ-z0T"/>
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DR-u1-5lo">
-                                <rect key="frame" x="162" y="554" width="50" height="50"/>
+                                <rect key="frame" x="150" y="529" width="75" height="75"/>
                                 <state key="normal" image="stop-100"/>
                                 <connections>
                                     <action selector="stopButton:" destination="JZI-Ia-L4p" eventType="touchUpInside" id="4RE-yA-kN9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tN-je-TSL">
-                                <rect key="frame" x="162" y="554" width="50" height="50"/>
+                                <rect key="frame" x="150" y="529" width="75" height="75"/>
                                 <state key="normal" image="play-100"/>
                                 <connections>
                                     <action selector="startButton:" destination="JZI-Ia-L4p" eventType="touchUpInside" id="J5b-Bp-VNd"/>
@@ -474,16 +472,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="baum_50" width="25" height="25"/>
-        <image name="filter-50" width="25" height="25"/>
-        <image name="info-50" width="25" height="25"/>
-        <image name="isomatte-50" width="25" height="25"/>
-        <image name="meditation-50" width="25" height="25"/>
-        <image name="menue-50" width="25" height="25"/>
-        <image name="play-100" width="50" height="50"/>
-        <image name="plus-100" width="50" height="50"/>
-        <image name="stop-100" width="50" height="50"/>
-        <image name="suche-50" width="25" height="25"/>
-        <image name="yogini" width="169" height="169"/>
+        <image name="baum_50" width="37.5" height="37.5"/>
+        <image name="filter-50" width="37.5" height="37.5"/>
+        <image name="info-50" width="37.5" height="37.5"/>
+        <image name="isomatte-50" width="37.5" height="37.5"/>
+        <image name="meditation-50" width="37.5" height="37.5"/>
+        <image name="menue-50" width="37.5" height="37.5"/>
+        <image name="play-100" width="75" height="75"/>
+        <image name="plus-100" width="75" height="75"/>
+        <image name="stop-100" width="75" height="75"/>
+        <image name="suche-50" width="37.5" height="37.5"/>
+        <image name="yogini" width="338" height="338"/>
     </resources>
 </document>
