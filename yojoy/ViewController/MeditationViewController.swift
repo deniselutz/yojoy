@@ -38,6 +38,7 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
         
         // visibility
         stopOutlet.isHidden = true
+        pauseOutlet.isHidden = true
 
         // Do, Try, Catch: Error Handling
         do {
@@ -63,6 +64,7 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
         sliderOutlet.isHidden = true
         startOutlet.isHidden = true
         stopOutlet.isHidden = false
+        pauseOutlet.isHidden = false
     }
     
     @objc private func counter() {
@@ -106,10 +108,15 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
         sliderOutlet.isHidden = false
         startOutlet.isHidden = false
         stopOutlet.isHidden = true
+        pauseOutlet.isHidden = true
     }
     
     @IBOutlet weak var pauseOutlet: UIButton!
     @IBAction func pauseButton(_ sender: UIButton) {
+        timer.invalidate()
+        startOutlet.isHidden = false
+        stopOutlet.isHidden = true
+        pauseOutlet.isHidden = true
     }
     
 
