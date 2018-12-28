@@ -15,9 +15,9 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
     
     var audioPlayer = AVAudioPlayer()
 
-    var timeCount = 30 {
+    var timeCount = 1800 {
         didSet {
-            // creates Tupel with Integer Values for hour, minutes, seconds
+            // creates Tupel with Integer Values for hour, minutes, seconds from timeCount
             let (h, m, s) = secondsToHoursMinutesSeconds(seconds: timeCount)
             // convert Int to String with leading zeros; format: 00:00:00
             countdownLabel.text = String(format: "%02d:%02d:%02d", h, m, s)
@@ -82,8 +82,8 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
     
     public func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         if flag == true {
-            timeCount = 30
-            sliderOutlet.setValue(30, animated: true)
+            timeCount = 1800
+            sliderOutlet.setValue(1800, animated: true)
             sliderOutlet.isHidden = false
             startOutlet.isHidden = false
             stopOutlet.isHidden = true
@@ -96,17 +96,22 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
         // stop the timer
         timer.invalidate()
         
-        // set countdownLabel back to 30
-        timeCount = 30
+        // set countdownLabel back to 1800
+        timeCount = 1800
         
         audioPlayer.stop()
         
         // visibilities
-        sliderOutlet.setValue(30, animated: true)
+        sliderOutlet.setValue(1800, animated: true)
         sliderOutlet.isHidden = false
         startOutlet.isHidden = false
         stopOutlet.isHidden = true
     }
+    
+    @IBOutlet weak var pauseOutlet: UIButton!
+    @IBAction func pauseButton(_ sender: UIButton) {
+    }
+    
 
     func secondsToHoursMinutesSeconds (seconds : Int) -> (Int, Int, Int) {
         return (seconds / 3600, (seconds % 3600) / 60, (seconds % 60))

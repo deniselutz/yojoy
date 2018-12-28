@@ -95,7 +95,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yogini" translatesAutoresizingMaskIntoConstraints="NO" id="oDn-08-Vh3">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCG-V3-oH1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:30:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCG-V3-oH1">
                                 <rect key="frame" x="16" y="64" width="343" height="96"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                 <color key="textColor" red="0.73725490199999999" green="0.69019607839999997" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -128,11 +128,20 @@
                                     <action selector="startButton:" destination="JZI-Ia-L4p" eventType="touchUpInside" id="J5b-Bp-VNd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIR-gt-HCU">
+                                <rect key="frame" x="233" y="529" width="129" height="75"/>
+                                <state key="normal" title="Button" image="pause-100"/>
+                                <connections>
+                                    <action selector="pauseButton:" destination="JZI-Ia-L4p" eventType="touchUpInside" id="t37-bx-Eci"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Vci-qp-NOs" firstAttribute="bottom" secondItem="IIR-gt-HCU" secondAttribute="bottom" constant="14" id="Bzr-UQ-e72"/>
                             <constraint firstItem="xBa-Mw-bDL" firstAttribute="top" secondItem="QCG-V3-oH1" secondAttribute="bottom" constant="7.5" id="IbL-HC-kZR"/>
                             <constraint firstItem="4tN-je-TSL" firstAttribute="centerX" secondItem="kgY-yh-SKT" secondAttribute="centerX" id="K3e-UN-pfs"/>
+                            <constraint firstItem="IIR-gt-HCU" firstAttribute="leading" secondItem="8DR-u1-5lo" secondAttribute="trailing" constant="8" id="K4B-gr-Bh5"/>
                             <constraint firstItem="Vci-qp-NOs" firstAttribute="bottom" secondItem="8DR-u1-5lo" secondAttribute="bottom" constant="14" id="MTT-JG-jEx"/>
                             <constraint firstItem="qy1-Bj-RcG" firstAttribute="leading" secondItem="Vci-qp-NOs" secondAttribute="leading" constant="16" id="Oog-wz-FyX"/>
                             <constraint firstItem="oDn-08-Vh3" firstAttribute="leading" secondItem="Vci-qp-NOs" secondAttribute="leading" id="QCt-mw-11b"/>
@@ -141,6 +150,7 @@
                             <constraint firstItem="QCG-V3-oH1" firstAttribute="top" secondItem="Vci-qp-NOs" secondAttribute="top" id="Tml-mq-fm7"/>
                             <constraint firstItem="Vci-qp-NOs" firstAttribute="trailing" secondItem="QCG-V3-oH1" secondAttribute="trailing" constant="16" id="XLC-Ei-hlk"/>
                             <constraint firstItem="Vci-qp-NOs" firstAttribute="bottom" secondItem="4tN-je-TSL" secondAttribute="bottom" constant="14" id="cfi-KO-GF9"/>
+                            <constraint firstItem="IIR-gt-HCU" firstAttribute="top" secondItem="qy1-Bj-RcG" secondAttribute="bottom" constant="24" id="fjm-Jy-6Ws"/>
                             <constraint firstItem="Vci-qp-NOs" firstAttribute="trailing" secondItem="qy1-Bj-RcG" secondAttribute="trailing" constant="16" id="gGn-kU-9Yw"/>
                             <constraint firstItem="QCG-V3-oH1" firstAttribute="leading" secondItem="Vci-qp-NOs" secondAttribute="leading" constant="16" id="gpC-Jf-j3B"/>
                             <constraint firstItem="oDn-08-Vh3" firstAttribute="bottom" secondItem="Vci-qp-NOs" secondAttribute="bottom" id="qwQ-93-TFA"/>
@@ -148,12 +158,14 @@
                             <constraint firstItem="8DR-u1-5lo" firstAttribute="top" secondItem="qy1-Bj-RcG" secondAttribute="bottom" constant="24" id="x6u-VQ-qu2"/>
                             <constraint firstItem="oDn-08-Vh3" firstAttribute="top" secondItem="Vci-qp-NOs" secondAttribute="top" id="xXh-wY-ZCJ"/>
                             <constraint firstItem="Vci-qp-NOs" firstAttribute="trailing" secondItem="xBa-Mw-bDL" secondAttribute="trailing" constant="153" id="ytw-03-mQC"/>
+                            <constraint firstItem="4tN-je-TSL" firstAttribute="top" secondItem="qy1-Bj-RcG" secondAttribute="bottom" constant="24" id="zFp-gV-JaD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Vci-qp-NOs"/>
                     </view>
                     <navigationItem key="navigationItem" id="dse-ED-518"/>
                     <connections>
                         <outlet property="countdownLabel" destination="QCG-V3-oH1" id="Tuw-Ia-z1g"/>
+                        <outlet property="pauseOutlet" destination="IIR-gt-HCU" id="Nt9-Fz-aef"/>
                         <outlet property="sliderOutlet" destination="qy1-Bj-RcG" id="eXx-gi-6XC"/>
                         <outlet property="startOutlet" destination="4tN-je-TSL" id="B9w-4q-22E"/>
                         <outlet property="stopOutlet" destination="8DR-u1-5lo" id="xhM-ZZ-gWA"/>
@@ -309,7 +321,7 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqs-ek-bq3">
-                                <rect key="frame" x="311" y="558" width="104" height="50"/>
+                                <rect key="frame" x="311" y="533" width="129" height="75"/>
                                 <state key="normal" title="Button" image="plus-100"/>
                             </button>
                         </subviews>
@@ -478,6 +490,7 @@
         <image name="isomatte-50" width="37.5" height="37.5"/>
         <image name="meditation-50" width="37.5" height="37.5"/>
         <image name="menue-50" width="37.5" height="37.5"/>
+        <image name="pause-100" width="75" height="75"/>
         <image name="play-100" width="75" height="75"/>
         <image name="plus-100" width="75" height="75"/>
         <image name="stop-100" width="75" height="75"/>
