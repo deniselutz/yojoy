@@ -115,56 +115,64 @@
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DR-u1-5lo">
-                                <rect key="frame" x="150" y="529" width="75" height="75"/>
+                                <rect key="frame" x="125" y="529" width="75" height="75"/>
                                 <state key="normal" image="stop-100"/>
                                 <connections>
                                     <action selector="stopButton:" destination="JZI-Ia-L4p" eventType="touchUpInside" id="4RE-yA-kN9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIR-gt-HCU">
+                                <rect key="frame" x="208" y="529" width="75" height="75"/>
+                                <state key="normal" image="pause-100"/>
+                                <connections>
+                                    <action selector="pauseButton:" destination="JZI-Ia-L4p" eventType="touchUpInside" id="t37-bx-Eci"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tN-je-TSL">
-                                <rect key="frame" x="150" y="529" width="75" height="75"/>
+                                <rect key="frame" x="208" y="529" width="75" height="75"/>
                                 <state key="normal" image="play-100"/>
                                 <connections>
                                     <action selector="startButton:" destination="JZI-Ia-L4p" eventType="touchUpInside" id="J5b-Bp-VNd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIR-gt-HCU">
-                                <rect key="frame" x="233" y="529" width="129" height="75"/>
-                                <state key="normal" title="Button" image="pause-100"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THu-PX-uDe">
+                                <rect key="frame" x="74.5" y="385" width="226" height="226"/>
+                                <state key="normal" image="play-filled-100"/>
                                 <connections>
-                                    <action selector="pauseButton:" destination="JZI-Ia-L4p" eventType="touchUpInside" id="t37-bx-Eci"/>
+                                    <action selector="firstPlayButton:" destination="JZI-Ia-L4p" eventType="touchUpInside" id="ogE-fz-bn8"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Vci-qp-NOs" firstAttribute="bottom" secondItem="IIR-gt-HCU" secondAttribute="bottom" constant="14" id="Bzr-UQ-e72"/>
                             <constraint firstItem="xBa-Mw-bDL" firstAttribute="top" secondItem="QCG-V3-oH1" secondAttribute="bottom" constant="7.5" id="IbL-HC-kZR"/>
-                            <constraint firstItem="4tN-je-TSL" firstAttribute="centerX" secondItem="kgY-yh-SKT" secondAttribute="centerX" id="K3e-UN-pfs"/>
-                            <constraint firstItem="IIR-gt-HCU" firstAttribute="leading" secondItem="8DR-u1-5lo" secondAttribute="trailing" constant="8" id="K4B-gr-Bh5"/>
+                            <constraint firstItem="THu-PX-uDe" firstAttribute="centerX" secondItem="kgY-yh-SKT" secondAttribute="centerX" id="JiR-2f-Xg1"/>
                             <constraint firstItem="Vci-qp-NOs" firstAttribute="bottom" secondItem="8DR-u1-5lo" secondAttribute="bottom" constant="14" id="MTT-JG-jEx"/>
                             <constraint firstItem="qy1-Bj-RcG" firstAttribute="leading" secondItem="Vci-qp-NOs" secondAttribute="leading" constant="16" id="Oog-wz-FyX"/>
                             <constraint firstItem="oDn-08-Vh3" firstAttribute="leading" secondItem="Vci-qp-NOs" secondAttribute="leading" id="QCt-mw-11b"/>
                             <constraint firstItem="oDn-08-Vh3" firstAttribute="trailing" secondItem="Vci-qp-NOs" secondAttribute="trailing" id="Qfi-xM-p83"/>
                             <constraint firstItem="xBa-Mw-bDL" firstAttribute="leading" secondItem="Vci-qp-NOs" secondAttribute="leading" constant="152" id="Snh-Nd-BH6"/>
                             <constraint firstItem="QCG-V3-oH1" firstAttribute="top" secondItem="Vci-qp-NOs" secondAttribute="top" id="Tml-mq-fm7"/>
+                            <constraint firstItem="Vci-qp-NOs" firstAttribute="bottom" secondItem="4tN-je-TSL" secondAttribute="bottom" constant="14" id="XEv-Nt-EVb"/>
                             <constraint firstItem="Vci-qp-NOs" firstAttribute="trailing" secondItem="QCG-V3-oH1" secondAttribute="trailing" constant="16" id="XLC-Ei-hlk"/>
-                            <constraint firstItem="Vci-qp-NOs" firstAttribute="bottom" secondItem="4tN-je-TSL" secondAttribute="bottom" constant="14" id="cfi-KO-GF9"/>
-                            <constraint firstItem="IIR-gt-HCU" firstAttribute="top" secondItem="qy1-Bj-RcG" secondAttribute="bottom" constant="24" id="fjm-Jy-6Ws"/>
+                            <constraint firstItem="4tN-je-TSL" firstAttribute="leading" secondItem="8DR-u1-5lo" secondAttribute="trailing" constant="8" id="YSu-GB-Knr"/>
                             <constraint firstItem="Vci-qp-NOs" firstAttribute="trailing" secondItem="qy1-Bj-RcG" secondAttribute="trailing" constant="16" id="gGn-kU-9Yw"/>
                             <constraint firstItem="QCG-V3-oH1" firstAttribute="leading" secondItem="Vci-qp-NOs" secondAttribute="leading" constant="16" id="gpC-Jf-j3B"/>
+                            <constraint firstItem="Vci-qp-NOs" firstAttribute="bottom" secondItem="IIR-gt-HCU" secondAttribute="bottom" constant="14" id="nc5-1a-XDK"/>
                             <constraint firstItem="oDn-08-Vh3" firstAttribute="bottom" secondItem="Vci-qp-NOs" secondAttribute="bottom" id="qwQ-93-TFA"/>
-                            <constraint firstItem="8DR-u1-5lo" firstAttribute="centerX" secondItem="kgY-yh-SKT" secondAttribute="centerX" id="wBa-0P-pUc"/>
+                            <constraint firstItem="IIR-gt-HCU" firstAttribute="leading" secondItem="8DR-u1-5lo" secondAttribute="trailing" constant="8" id="tnO-15-iQf"/>
+                            <constraint firstItem="Vci-qp-NOs" firstAttribute="bottom" secondItem="THu-PX-uDe" secondAttribute="bottom" constant="7" id="v91-z4-m8d"/>
+                            <constraint firstItem="8DR-u1-5lo" firstAttribute="centerX" secondItem="kgY-yh-SKT" secondAttribute="centerX" constant="-25" id="wBa-0P-pUc"/>
                             <constraint firstItem="8DR-u1-5lo" firstAttribute="top" secondItem="qy1-Bj-RcG" secondAttribute="bottom" constant="24" id="x6u-VQ-qu2"/>
                             <constraint firstItem="oDn-08-Vh3" firstAttribute="top" secondItem="Vci-qp-NOs" secondAttribute="top" id="xXh-wY-ZCJ"/>
                             <constraint firstItem="Vci-qp-NOs" firstAttribute="trailing" secondItem="xBa-Mw-bDL" secondAttribute="trailing" constant="153" id="ytw-03-mQC"/>
-                            <constraint firstItem="4tN-je-TSL" firstAttribute="top" secondItem="qy1-Bj-RcG" secondAttribute="bottom" constant="24" id="zFp-gV-JaD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Vci-qp-NOs"/>
                     </view>
                     <navigationItem key="navigationItem" id="dse-ED-518"/>
                     <connections>
                         <outlet property="countdownLabel" destination="QCG-V3-oH1" id="Tuw-Ia-z1g"/>
+                        <outlet property="firstPlayOutlet" destination="THu-PX-uDe" id="BH1-wh-hIP"/>
                         <outlet property="pauseOutlet" destination="IIR-gt-HCU" id="Nt9-Fz-aef"/>
                         <outlet property="sliderOutlet" destination="qy1-Bj-RcG" id="eXx-gi-6XC"/>
                         <outlet property="startOutlet" destination="4tN-je-TSL" id="B9w-4q-22E"/>
@@ -492,6 +500,7 @@
         <image name="menue-50" width="37.5" height="37.5"/>
         <image name="pause-100" width="75" height="75"/>
         <image name="play-100" width="75" height="75"/>
+        <image name="play-filled-100" width="226.80000305175781" height="226.80000305175781"/>
         <image name="plus-100" width="75" height="75"/>
         <image name="stop-100" width="75" height="75"/>
         <image name="suche-50" width="37.5" height="37.5"/>

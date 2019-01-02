@@ -39,6 +39,7 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
         // visibility
         stopOutlet.isHidden = true
         pauseOutlet.isHidden = true
+        startOutlet.isHidden = true
 
         // Do, Try, Catch: Error Handling
         do {
@@ -106,20 +107,27 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
         // visibilities
         sliderOutlet.setValue(1800, animated: true)
         sliderOutlet.isHidden = false
-        startOutlet.isHidden = false
+        startOutlet.isHidden = true
         stopOutlet.isHidden = true
         pauseOutlet.isHidden = true
+        firstPlayOutlet.isHidden = false
     }
     
     @IBOutlet weak var pauseOutlet: UIButton!
     @IBAction func pauseButton(_ sender: UIButton) {
         timer.invalidate()
         startOutlet.isHidden = false
-        stopOutlet.isHidden = true
+        stopOutlet.isHidden = false
         pauseOutlet.isHidden = true
     }
     
-
+    @IBOutlet weak var firstPlayOutlet: UIButton!
+    @IBAction func firstPlayButton(_ sender: Any) {
+        startButton(firstPlayOutlet)
+        firstPlayOutlet.isHidden = true
+    }
+    
+    
     func secondsToHoursMinutesSeconds (seconds : Int) -> (Int, Int, Int) {
         return (seconds / 3600, (seconds % 3600) / 60, (seconds % 60))
     }
